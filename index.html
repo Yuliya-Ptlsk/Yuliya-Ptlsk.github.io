@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo_App</title>
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Kalam|Lobster+Two|Patrick+Hand|Ultra" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li>
+                        <div>
+                            <span class="icon-home">
+                            </span><span>Home</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <span class="icon-settings1"></span>
+                            <span>Settings</span>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="logo-block">
+                <img src="img/checkbox-checked.svg" alt="logo">
+                <span>ToDo</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="home-block">
+            <div class="home-block__content">
+                <section>
+                    <div class="container">
+                        <div class="add-handler"><span>Add task</span><span
+                                class="add-handler__angle"><i></i></span></div><div class="filters-block">
+                        <div><span class="filters-block__icons"
+                        ><span class="icon-sort-asc" id="sort-priority-top"></span><span class="icon-sort-desc" id="sort-priority-bottom"></span></span><span>
+                            Priority</span></div>
+                        <div><span class="filters-block__icons" id="sort-date-top"><span
+                                class="icon-sort-asc" id="sort-date-bottom"></span><span
+                                class="icon-sort-desc"></span></span>
+                            Date</div>
+                        </div>
+                        <div class="add-menu">
+                            <div class="add-menu__content">
+                                <p>
+                                    <label>Task:
+                                        <input type="text" id="taskName">
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>Description:
+                                        <input type="text" id="taskDescription">
+                                    </label>
+                                </p>
+                                <p>
+                                    <label class="task-priority">Priority:
+                                        <span>
+                                            <input type="radio" name="priority" value="high" checked>High
+                                            <input type="radio" name="priority" value="medium">Medium
+                                            <input type="radio" name="priority" value="low">Low
+                                        </span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <input type="button" value="ADD" id="addBtn">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="section-container">
+                        <div class="list-title"><span>To do list</span> <span id="toDoCount"></span></div>
+                        <div class="border"></div>
+                        <ul id="toDoList" class="to-do-list">
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <div class="section-container">
+                        <div class="list-title"><span>Complete list</span> <span id="completeCount"></span></div>
+                        <div class="border"></div>
+                        <ul id="completeList" class="complete-list">
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="settings-block"></div>
+    </main>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
